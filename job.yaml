@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: scripts-execution-job
+  namespace: actions-test
+  labels:
+    app: scripts
+spec:
+  template:
+    spec:
+      containers:
+        - name: scripts-execution
+          image: dmeneguin/actions-test:master
+      imagePullSecrets:
+        - name: regcred
+      restartPolicy: Never
+  backoffLimit: 4
