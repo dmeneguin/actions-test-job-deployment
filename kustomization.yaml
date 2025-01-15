@@ -1,10 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-
 resources:
-- ./job.yaml
-
+  - ./job.yaml
 images:
-- name: dmeneguin/actions-test
-  newName: dmeneguin/actions-test
-  newTag: de4c5d13aeb3dcab1646e69fe05dc9e428718146
+  - name: dmeneguin/actions-test
+    newName: dmeneguin/actions-test
+    newTag: 030fdc4e0db746676e48343ec164e557a3330bfc
