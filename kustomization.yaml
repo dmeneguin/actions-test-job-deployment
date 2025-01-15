@@ -5,4 +5,4 @@ resources:
 images:
   - name: dmeneguin/actions-test
     newName: dmeneguin/actions-test
-    newTag: 030fdc4e0db746676e48343ec164e557a3330bfc
+    newTag: d4e823efb64bed0036ec46fd5bed96a742144065
